@@ -15,7 +15,6 @@ body {
 .personalInfo {
   background-color: #313c4e;
   padding: 2rem 3rem;
-
   align-items: center;
 }
 
@@ -43,6 +42,7 @@ header h3 {
 
 .personalInfo p {
   color: white;
+  text-align: justify;
   font-size: 1.2rem;
 }
 
@@ -224,4 +224,55 @@ ul.Achievements li,
 ul.subjects li,
 ul.projectTask li {
   list-style: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .personalInfo .left {
+    width: 65%;
+  }
+  .personalInfo img {
+    max-width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .personalInfo .left {
+    width: 65%;
+  }
+
+  .personalInfo img {
+    max-width: 9rem;
+  }
+
+  .socialLink a {
+    font-size: 1.1rem;
+  }
+
+  .leftBlock,
+  .rightBlock {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .personalInfo img {
+    display: none;
+  }
+
+  .personalInfo .left {
+    width: 100%;
+  }
+
+  .socialLink {
+    padding: 1rem 3rem;
+  }
+  .socialLink li {
+    padding: 0rem 0 1rem 0;
+    width: 100%;
+  }
+
+  .leftBlock,
+  .rightBlock {
+    width: 100%;
+  }
 }
