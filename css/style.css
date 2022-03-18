@@ -220,6 +220,15 @@ ul.subjects li,
 ul.projectTask li {
   list-style: none;
 }
+.refernceLink {
+  text-align: center;
+  margin: 2rem;
+}
+
+a.originalCV {
+  text-decoration: none;
+  color: #5c9da0;
+}
 
 @media only screen and (max-width: 992px) {
   .personalInfo .left {
